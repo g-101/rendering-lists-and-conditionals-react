@@ -31,7 +31,7 @@ function App() {
     <div>
       <h1>Hello World!</h1>
       <NewExpense onAddExpense={addExpenseHandler} />
-      {/* Passamos dados para outros componentes atraves de atributos */}
+
       <Expenses expenses={expenses} />
     </div>
   );

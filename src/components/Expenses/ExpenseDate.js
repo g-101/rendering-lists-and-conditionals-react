@@ -1,6 +1,5 @@
 import './ExpenseDate.css';
-// Um componente é apenas uma função em javascript
-// Para usar um componente em qualquer lugar, deve-se exporta-lo.
+
 export const ExpenseDate = props => {
   const month = props.date.toLocaleString('en-US', { month: 'long' });
   const year = props.date.getFullYear();

@@ -2,14 +2,11 @@ import React, { useState } from 'react';
 import './ExpenseForm.css';
 
 export const ExpenseForm = props => {
-  // pode se ter multiplos states por componente
   const [enteredTitle, setEnteredTitle] = useState('');
   const [enteredAmount, setEnteredAmount] = useState('');
   const [enteredDate, setEnteredDate] = useState('');
 
   const titleChangeHandler = event => {
-    // aponta para o elemento em que o evento ocorre
-    // ness caso ele esta olhando o valor que foi digitado no input.
     setEnteredTitle(event.target.value);
   };
   const amountChangeHandler = event => {
@@ -19,8 +16,6 @@ export const ExpenseForm = props => {
     setEnteredDate(event.target.value);
   };
   const submitHandler = event => {
-    // previne o comportamento padrão de um elemento.
-    // ex: o elemento button, ao clicar, ele da reload na pagina.
     event.preventDefault();
 
     const expenseData = {
